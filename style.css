@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;400;500;600;700;900&display=swap');
+
+:root{
+    --orange-color:#F2C94C;
+    --blue-color:#4554DC;
+    --grey-color:#F9F9FF;
+    --dark-color:#0A536A;
+    --black-color:#313238;
+    --light-blue-color: linear-gradient(90deg, #2AC4A0 0%, #6C77EF 100%);
+
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+
+.wrapper {
+    max-width: 1134px;
+    margin: 0 auto;
+}
+li{
+  list-style: none;
+  
+}
+a{
+  text-decoration: none;
+}
+.btn{
+  padding: 16px 32px;
+  border-radius: 15px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.btn.dark {
+  background: var(--dark-color);
+}
+
+.btn.light {
+  background: var(--light-blue-color);
+}
+
+nav.btn.light.nav-btn:hover{
+  background: var(--orange-color)!important;
+  color: #ffffff;
+}
+
+.btn.new-btn{
+  background: #7D72FF !important;
+}
+
+.btn.enrol-icon::before {
+  content: url("assets/icons/enrol-icon.svg");
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.btn.enrol-icon{
+  padding-left: 60px;
+}
+
+.btn.new-btn:hover{
+  background: var(--orange-color) !important;
+}
+
+/* header */
+header{
+  background: linear-gradient(113.78deg, #1E282B 0%, #151A43 99.45%);
+  height: 100vh;
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 1134px;
+  top: 36px;
+  z-index: 100;
+}
+
+nav .logo{
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+}
+nav .logo span{
+  color: #F2C94C;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+nav ul li a{
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+
+nav ul li a:hover{
+  color: var(--orange-color);
+}
+
+
+
+.hero-section{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.achievement-cards{
+  display: none;
+}
+
+.hero-section .left h1{
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 50px;
+line-height: 118%;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: -5px;
+}
+
+.hero-section .left h1 span{
+  color: #F2C94C;
+}
+
+.hero-section .left p{
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #FFFFFF;
+margin:28px 0;
+}
